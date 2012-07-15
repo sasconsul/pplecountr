@@ -9,15 +9,15 @@
 
 	//File name is: eg. "image20100405224038.png"
 	// $target = "uploads/image" . $timestamp. ".png"; 
-	$target = "uploads/crowd_makovitch.png"; 
+	$target = "../uploads/crowd_makovitch.png"; 
 	
 	//In my example, the file is received from an iPhone application.
-	if(move_uploaded_file($_FILES["media"]["tmp_name"], $target)) {
+	//if(move_uploaded_file($_FILES["media"]["tmp_name"], $target)) {
     	//CONTINUE
     	//echo json_encode("The file has been uploaded to " . $target);
-	} else{
- 	   echo json_encode("There was an error uploading the file, please try again!");
-	}
+//	} else{
+//	   echo json_encode("There was an error uploading the file, please try again!");
+//	}
 	
 	//API variables
 	$api_key = 'e20eec7cb14e45aca1875ec0cd91a48c';
