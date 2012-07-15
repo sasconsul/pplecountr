@@ -19,11 +19,11 @@
 	}
 	
 	//API variables
-	$api_key = '<YOUR API_KEY>';
-	$webhook = '<URL TO YOUR WEBHOOK>';
+	$api_key = 'e20eec7cb14e45aca1875ec0cd91a48c';
+	$webhook = 'http://pcntr1.dev4.webenabled.net/iqengines/webhook.php';
 	$img = '@'.realpath($target).';type=image/jpg';
 	$json = '1';
-	$api_secret = '<YOUR API_SECRET>';
+	$api_secret = '30809ddfbcb6403496544c0eb1619c14';
 	$filename = "image" . $timestamp. ".png";
 	//I use an extra Device_ID variable to identify which device sent the query. This is handy for catching the results afterwards.
 	$extra = $_POST['device_id'];
