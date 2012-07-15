@@ -8,7 +8,8 @@
     $timestamp = date('YmdHis');
 
 	//File name is: eg. "image20100405224038.png"
-	$target = "uploads/image" . $timestamp. ".png"; 
+	// $target = "uploads/image" . $timestamp. ".png"; 
+	$target = "uploads/crowd_makovitch.png"; 
 	
 	//In my example, the file is received from an iPhone application.
 	if(move_uploaded_file($_FILES["media"]["tmp_name"], $target)) {
