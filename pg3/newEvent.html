@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Create New Event</title>
+
+<style type="text/css">
+/*margin and padding on body element
+  can introduce errors in determining
+  element position and are not recommended;
+  we turn them off as a foundation for YUI
+  CSS treatments. */
+body {
+	margin:0;
+	padding:0;
+}
+-->
+
+</style>
+
+<!-- Combo-handled YUI CSS files: --> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.9.0/build/tabview/assets/skins/sam/tabview.css"> 
+<!-- Combo-handled YUI JS files: --> 
+<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.9.0/build/yahoo-dom-event/yahoo-dom-event.js&2.9.0/build/connection/connection-min.js&2.9.0/build/element/element-min.js&2.9.0/build/tabview/tabview-min.js"></script>
+</head>
+<body class="yui-skin-sam">
+<img src="banner.jpg" height="80" width="100%" /><br><br>
+
+<div id="container"></div>
+<script type="text/javascript">
+(function() {
+    var tabView = new YAHOO.widget.TabView();
+
+    tabView.addTab( new YAHOO.widget.Tab({
+        label: 'Flickr',
+        content: '<table border="0"><tr><td align="center"><table></tr><tr><td colspan="4" valign="top"><table border="0"><tr><td>July 14, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>June 25, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>March 5, 2012</td></tr><tr><td><img src="crowds3.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>January 1, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr></table></td></tr></table>',
+        cacheData: true, 
+        active: true
+    }));
+
+    tabView.addTab( new YAHOO.widget.Tab({
+        label: 'Tumblr',
+        content: '<table border="0"><tr><td align="center"><table></tr><tr><td colspan="4" valign="top"><table border="0"><tr><td>July 14, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>June 25, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>March 5, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>January 1, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr></table></td></tr></table>',
+        cacheData: true, 
+        
+
+    }));
+
+    tabView.addTab( new YAHOO.widget.Tab({
+        label: '500px',
+        content: '<table border="0"><tr><td align="center"><table></tr><tr><td colspan="4" valign="top"><table border="0"><tr><td>July 14, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds1jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>June 25, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>March 5, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>January 1, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr></table></td></tr></table>',
+        cacheData: true, 
+
+    }));
+ 
+    tabView.addTab( new YAHOO.widget.Tab({
+        label: 'Dropbox',
+        content: '<table border="0"><tr><td align="center"><table></tr><tr><td colspan="4" valign="top"><table border="0"><tr><td>July 14, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>June 25, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>March 5, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr><tr><td>January 1, 2012</td></tr><tr><td><img src="crowds.jpg" width="125" height="125" hspace="10" /><img src="crowds1.jpg" width="125" height="125" hspace="10" /><img src="crowds2.jpg" width="125" height="125" hspace="10" /><img src="crowds3.jpg" width="125" height="125" hspace="10" /></td></tr><tr><td align="center" height="25"><img src="spacer_black.png" width="75%" height="1" valign="9"></td></tr></table></td></tr></table>',
+        cacheData: true, 
+
+    }));
+
+    tabView.appendTo('container');
+})();
+</script>
+
+
+
+	
+
+</body>
+</html>
